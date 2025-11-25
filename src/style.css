@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Override the default 'dark' variant.
+  This tells Tailwind: "Apply dark: styles when this element 
+  or a parent has the class '.dark'"
+*/
+@variant dark (&:where(.dark, .dark *));
