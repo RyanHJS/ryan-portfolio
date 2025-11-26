@@ -5,6 +5,7 @@ const Nav = ({setDarkMode, darkMode}) => {
     <div>
       <nav className="py-10 mb-12 flex justify-between dark:text-white">
         <h1 className="font-burtons text-xl select-none">Ryan He</h1>
+        {/* TODO: change font, add bouncing animation */}
         <ul className="flex items-center">
           <li>
             <BsFillMoonStarsFill
