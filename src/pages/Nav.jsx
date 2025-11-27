@@ -1,13 +1,20 @@
 import { BsToggleOff, BsSunFill } from "react-icons/bs";
+import lightSwitchSound from "../assets/light-switch.mp3";
+import bouncyFartSound from "../assets/bouncy-fart.mp3";
+
+const lightSwitchAudio = new Audio(lightSwitchSound);
+const bouncyFartAudio = new Audio(bouncyFartSound);
 
 const Nav = ({ setDarkMode, darkMode }) => {
   const handleThemeSwitch = () => {
     setDarkMode(!darkMode);
-    new Audio("src/assets/light-switch.mp3").play();
+    lightSwitchAudio.currentTime = 0;
+    lightSwitchAudio.play();
   };
 
   const playNameHoverSound = () => {
-    new Audio("src/assets/bouncy-fart.mp3").play();
+    bouncyFartAudio.currentTime = 0;
+    bouncyFartAudio.play();
   };
 
   return (

@@ -1,11 +1,13 @@
 import React from "react";
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
+import bubblePopSound from "../assets/bubble-pop.wav";
+
+const playSocialsHoverSound = () => {
+  new Audio(bubblePopSound).play();
+}
 
 const Socials = () => {
-  const playSocialsHoverSound = () => {
-    new Audio("src/assets/bubble-pop.wav").play();
-  };
 
   return (
     <div>
