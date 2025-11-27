@@ -15,18 +15,6 @@ const Socials = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: "tween" }}
         >
-          <a href="https://www.linkedin.com/in/ryanhjs/" target="_blank">
-            <AiFillLinkedin
-              className="cursor-pointer hover:bg-cyan-300 rounded-full"
-              onMouseEnter={playSocialsHoverSound}
-            />
-          </a>
-        </motion.div>
-        <motion.div
-          whileInView={{ opacity: 1 }}
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.5, type: "tween" }}
-        >
           <a
             href="https://github.com/RyanHJS/"
             target="_blank rel=“noreferrer”"
@@ -37,6 +25,20 @@ const Socials = () => {
             />
           </a>
         </motion.div>
+
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, type: "tween" }}
+        >
+          <a href="https://www.linkedin.com/in/ryanhjs/" target="_blank">
+            <AiFillLinkedin
+              className="cursor-pointer hover:bg-cyan-300 rounded-full"
+              onMouseEnter={playSocialsHoverSound}
+            />
+          </a>
+        </motion.div>
+        
         <motion.div
           whileInView={{ opacity: 1 }}
           whileHover={{ scale: 1.1 }}
