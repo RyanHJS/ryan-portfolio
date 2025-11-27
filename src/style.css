@@ -5,3 +5,9 @@
   or a parent has the class '.dark'"
 */
 @variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'burtons';
+  font-family: 'DM Sans', sans-serif;
+  src: url(/public/Burtons.otf) format('opentype');
+}
