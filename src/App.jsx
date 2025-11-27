@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 border border-green-400">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen flex flex-col">
           <div className="grow">
             <Nav setDarkMode={setDarkMode} darkMode={darkMode} />
