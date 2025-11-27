@@ -14,12 +14,12 @@ const Nav = ({ setDarkMode, darkMode }) => {
     <div>
       <nav className="py-10 mb-12 flex justify-between dark:text-white">
         <h1
-          className="font-burtons text-xl animate-bounce hidden sm:flex"
+          className="font-burtons text-xl select-none animate-bounce hidden sm:flex"
           onMouseEnter={playNameHoverSound}
         >
           Ryan He
         </h1>
-        <ul className="flex flex-grow items-start justify-end">
+        <ul className="flex grow items-start justify-end">
           <li>
             {darkMode ? (
               <BsSunFill
